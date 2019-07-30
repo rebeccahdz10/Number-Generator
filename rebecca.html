@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rebecca Hernandez</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Rebecca's Number Generator</h1>
+        <button id="button" type="submit">Click Me!</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var options = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'];
+            $("#button").on("click", function () {
+                var randNum = options[Math.floor(Math.random() * options.length)];
+                alert("The number is: " + randNum);
+            })
+        });  
+    </script>
+</body>
+
+</html>
